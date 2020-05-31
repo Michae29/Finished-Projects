@@ -1,0 +1,315 @@
+
+/* <----------------------------- Shared Containers  ---------------------------> */
+body{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:lightgray;
+    font-family: 'Roboto', sans-serif;
+}
+
+.mainContainer {
+    width:90%;
+    background-color:white;
+    display: flex;
+}
+
+/* <------------- Right Side -----------------> */
+.rightContainer{
+    background-color: white;
+    width:100%;
+    height:100%;
+}
+
+.topBar{
+    height:100px;
+    background-color:white;
+}
+
+.greyBar{
+    height:100px;
+    background-color: #f5f5f5;
+    width: 100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/* <------- Navigation Bar (Left Side) ----------> */
+.navContainer{
+    display:flex;
+    flex-direction:column;
+    width:250px;
+}
+
+.logoContainer{
+    background-color:white;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    width:250px;
+    text-align: center;
+}
+
+.navBarStyle{
+    padding:10px;
+    background-color:#575757;
+    color:white;
+    text-align: right;
+    height:100vh;
+}
+
+.navBarStyle a {
+    text-decoration: none;
+    padding-top:5px;
+    color:white;
+    font-size:14px;
+}
+
+.navBarStyle ul {
+    list-style-type: none;
+    text-align: right;
+    margin-right:15px;
+    margin: 0;
+    padding: 0;
+}
+
+.navBarStyle li {
+    height: 15px;
+    padding: 10px;
+}
+
+.navBarStyle li:hover {
+    background-color: #757575;
+}
+
+.navBarHeaderStyle{
+    font-size: 16px;
+    font-variant: all-small-caps;
+}
+
+
+/* <-------------------- Shared Assets ------------------->*/
+.boxShadow{
+    border-radius:5px;
+    box-shadow: 0px 0px 4px 1px rgba(120,120,120,1);
+}
+
+.basicButton {
+    box-shadow:inset 0px 1px 0px 0px #ffffff;
+    background:linear-gradient(to bottom, #fff 5%, #d9d9d9 100%);
+    background-color:#ffffff;
+    border-radius:6px;
+    border:1px solid #dcdcdc;
+    /*! display:inline-block; */
+    cursor:pointer;
+    color:#666666;
+    font-size:15px;
+    font-weight:bold;
+    padding:6px 24px;
+    text-decoration:none;
+    text-shadow:0px 1px 0px #ffffff;
+    margin-top:20px;
+    /*! width:150px; */
+    text-align: center;
+}
+.basicButton:hover {
+    background:linear-gradient(to bottom, #f6f6f6 5%, #ffffff 100%);
+}
+.basicButton:active {
+    position:relative;
+    top:1px;
+}
+
+.centeredContainer{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    text-align:center;
+    width: 100%;
+}
+
+/* <--------------------- Main Page ----------------------> */
+
+.mainPageHeader{
+    background-color:whitesmoke;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.featuredProductContainer{
+    background-color:white;
+    display:flex;
+    justify-content:space-evenly;
+    height: 100%;
+    width:100%;
+}
+
+.featuredProductItem{
+    background-color:white;
+    width:400px;
+    height:400px;
+    border-color:#ccc;
+    margin-top:150px;
+    border-radius:5px;
+    justify-content:flex-end;
+}
+
+.productContainer{
+    padding-bottom:15px;
+}
+
+.productImageBox{
+    margin-bottom:35px;
+}
+
+img{
+    width:70%;
+}
+
+/* <----------------------- Cart Page ----------------------> */
+.cartContainer{
+    background-color:white;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cartTableItem{
+    margin-top:50px;
+    width:50%;
+    background-color:white;
+}
+
+.cartContainer table{
+    width:100%;
+}
+
+.cartTableItem th,td{
+    border-bottom: 1px solid #ddd;
+    width:1%;
+    text-align:center;
+}
+
+.removeButton{
+    text-decoration: none;
+    color:black;
+}
+
+.removeButton:hover{
+    text-decoration: underline;
+    color:#f46b6b;
+}
+
+.cartContainer tr{
+    background-color:white;
+    height:30px;
+    text-align:center;
+}
+
+/* <----------------------- Login Page -------------------------> */
+
+.loginContainer{
+    margin:50px;
+} 
+
+.textBoxLogin{
+    width:60%;
+    border-radius: 2px;
+    margin-bottom:30px;
+}
+
+.bottomLoginItem{
+    padding:50px 20px 50px 20px; 
+    text-align:center;
+}
+
+/* <----------------------- Categories Page -------------------------> */
+
+.categoryContainer{
+    margin-top:50px;
+}
+
+/* <----------------------- Account Creation Page --------------------> */
+
+.inputContainer{
+    display:flex;
+   width:400px;
+}
+
+.accountLabels{
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    margin-right:10px;
+    width:25%;
+}
+
+.accountInput{
+     display: flex;
+    flex-direction: column;
+    width:75%;
+}
+
+.lineStyle{
+    margin-top:5px;
+    margin-bottom:5px;
+    text-width: none;
+}
+
+/* <----------------------- Checkout Page --------------------> */
+
+.totalRow{
+    color:red;
+}
+
+.paymentButton{
+    width: auto;
+}
+
+/* <----------------------- Payment Page --------------------> */
+
+.paymentContainer{
+    display:flex;
+    //flex-direction:column;
+    width:500px;
+}
+
+.paymentLabels{
+    width:50%
+}
+
+.placeOrderButton{
+    justify-self:center;
+}
+
+/* <----------------------- Order Page --------------------> */
+
+.orderContainer{
+    display: flex;
+    width:100%;
+}
+
+.leftOrder{
+    width:25%;
+    display:flex;
+    justify-content: center;
+    
+}
+
+.orderInfo{
+    padding:5px 20px 5px 20px;
+    margin-top:50px;
+}
+
+.rightOrder{
+    width: 50%;
+    margin-top:50px;
+}
+
+/* <----------------------- Admin Login Page --------------------> */
+
+.adminLoginForm{
+    padding:50px
+}
